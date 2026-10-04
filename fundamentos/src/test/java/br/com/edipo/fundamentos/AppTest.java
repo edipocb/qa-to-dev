@@ -10,4 +10,14 @@ class AppTest {
     void deveMontarSaudacaoComONome() {
         assertEquals("Olá, Edipo! Bem-vindo ao Java.", App.saudacao("Edipo"));
     }
+
+    @Test 
+    void deveMontarDespedidaComEdipo() {
+        assertEquals("Até logo, Edipo!", App.despedida("Edipo"));
+    }
+    
+    @Test 
+    void deveMontarDespedidaComMaria() {
+        assertEquals("Até logo, Maria!", App.despedida("Maria"));
+    }
 }
