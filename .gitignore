@@ -1,0 +1,15 @@
+# Maven
+target/
+# VS Code (mantém as configs compartilháveis)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+# IntelliJ
+.idea/
+*.iml
+# Sistema
+.DS_Store
+Thumbs.db
+# Segredos
+.env
+*.env
