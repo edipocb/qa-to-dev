@@ -13,19 +13,28 @@ public class Calculadora {
         System.out.print("numero 2: ");
         double numero2 = teclado.nextDouble();
 
-        double soma = numero1 + numero2;
-        double sub = numero1 - numero2;
-        double multi = numero1 * numero2;
-        double div = numero1 / numero2;
-        double resto = numero1 % numero2;
-
         System.out.println("Resultados");
+        double soma = numero1 + numero2;
         System.out.println("Resultado " + numero1 + " + " + numero2 + " = " + soma);
+        double sub = numero1 - numero2;
         System.out.println("Resultado " + numero1 + " - " + numero2 + " = " + sub);
+        double multi = numero1 * numero2;
         System.out.println("Resultado " + numero1 + " * " + numero2 + " = " + multi);
-        System.out.println("Resultado " + numero1 + " / " + numero2 + " = " + div);
-        System.out.println("Resultado " + numero1 + " % " + numero2 + " = " + resto);
 
+        double div = numero1 / numero2;
+        if (numero2 == 0) {
+            System.out.println("Resultado " + numero1 + " / " + numero2 + " = não é possível dividir por zero");
+        } else {
+            System.out.println("Resultado " + numero1 + " / " + numero2 + " = " + div);
+
+        }
+
+        double resto = numero1 % numero2;
+        if (numero2 == 0) {
+            System.out.println("Resultado " + numero1 + " % " + numero2 + " = não é possível dividir por zero");
+        } else {
+            System.out.println("Resultado " + numero1 + " % " + numero2 + " = " + resto);
+        }
         teclado.close();
 
     }
