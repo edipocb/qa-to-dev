@@ -10,16 +10,13 @@ public class Somatorio {
 
         System.out.println("Gostaria de somar até qual número: ");
         int digitado = teclado.nextInt();
-
         if (digitado <= 0) {
             System.out.println("Digite um número positivo.");
         } else {
             int soma = 0;
-
             for (int i = 1; i <= digitado; i++) {
                 soma = soma + i;
             }
-
             System.out.println("A soma de 1 a " + digitado + " é " + soma + ".");
 
             teclado.close();
